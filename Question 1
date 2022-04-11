@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+  srand(time(0));
+  int randNum;
+  int minimum = 100;
+  cout << "Randomly Generated Numbers: ";
+  for(int i = 0; i < 5; i++){
+    //generate the random number(0-99)
+    //print the number
+    randNum = rand()%100;
+    //if minimum is greater than randNum, set minimum equal to randNum
+  if(minimum > randNum){
+    minimum = randNum;
+  }
+   //Output:
+    cout << randNum;
+    if(i < 4){
+     cout << ", "; 
+    }
+  }
+  cout << endl;
+    cout << "Minimum: " << minimum << endl;
+  
+}
