@@ -1,0 +1,24 @@
+#include <stdio.h>  
+
+int findMax(int number[],int from,int to)
+{
+  int max=number[from];
+  for(int i=from;i<=to;i++)
+  {
+
+    if(number[i]>max)
+      max=number[i];
+  }
+  return max;
+}
+int main() 
+{
+  const int N =10;
+ 
+  int number[] = {10,15,0,-25,19,20,25,30,45,20};
+  
+  printf("\nGreatest number in first half: %d",findMax(number,0,N/2-1));
+  
+  printf("\nGreatest number in second half: %d",findMax(number,N/2,N-1));
+  return 0;  
+}
