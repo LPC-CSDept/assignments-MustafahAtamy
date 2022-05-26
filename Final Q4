@@ -3,3 +3,15 @@
 #include<iomanip>
 
 using namespace std;
+const unsigned short N=5;
+struct scores {
+  double sc[N];
+  string grade;
+  };
+ struct grade {
+  string first;
+  string last;
+  string ssn;
+  scores score;
+  };
+  
