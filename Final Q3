@@ -1,4 +1,14 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+  int main(){
+  int size1,size2;
+  cout<<"Enter size of array 1 and array 2" 
+// array 1 must be grater than array 2 for statement to hold true
+  cin>>size1, size2;
+  if(size1>size2){
+   cout<<"False"<<endl;
+   return 0;
+   }
+// The code above is to legitimize the statement written above it   
+ 
