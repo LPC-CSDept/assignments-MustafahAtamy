@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() { 
+ double distance, weight;
+cin>>weight>>distance;
+
+if (weight<=0 || weight>20)
+{
+    cout<<"Weight should be between 1 and 20";
+}
+  else if (distance<10 || distance>3000) {
+    cout<<"Distance should be between 10 and 3000 miles";
+  }
+  else{
+    double rate;
+    if(weight<=2)
+    {rate 1.10;
+      }
+  }
+  else if(weight>2 && weight<=6)
+  {
+    rate=2.20;
+  }
+  else if(weight>6 && weight<=10)
+  {
+    rate=3.70;
+  }
+  else if(weight>10 && weight=20)
+  {
+    rate=4.80;
+  }
+  double totalcharge=(distance/500.0)*rate;
+  cout<<"Your total charge is: $"<<totalcharge;
+  }
