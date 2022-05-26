@@ -15,3 +15,16 @@ struct scores {
   scores score;
   };
   
+  Grade g; 
+  void printstruct(Grade);
+  int main()
+  {
+  fstream fs;
+  string line;
+  ifstream ini_file {"grades.txt"};
+  ofstream out_file {"grades.bin"};
+
+if(ini_file && out_file) {
+while(getline(ini_file,line)) {
+out_file <<line<< "/n";
+}
