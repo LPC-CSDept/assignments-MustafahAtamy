@@ -23,8 +23,9 @@ struct scores {
   string line;
   ifstream ini_file {"grades.txt"};
   ofstream out_file {"grades.bin"};
-
+// Declare fstream for ofstream and ifstream class object. Declare string line for writing text file.
 if(ini_file && out_file) {
 while(getline(ini_file,line)) {
 out_file <<line<< "/n";
 }
+cout<<"Cannot read file."<<endl;
